@@ -3,4 +3,5 @@ export interface Publication {
     year: number;
     doi?: string;
     url?: string;
+    abstract: string;
   }

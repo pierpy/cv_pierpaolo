@@ -34,6 +34,7 @@
             "styles": [
               "node_modules/bulma/css/bulma.min.css",
               "node_modules/bulma-timeline/dist/css/bulma-timeline.min.css",
+              "node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css",
               "src/styles.scss"
             ],
             
