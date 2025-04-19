@@ -10,7 +10,11 @@ import { NgFor } from '@angular/common';
 })
 export class TeachingComponent {
   courses = [
-    { name: 'Fisica Applicata', academicYear: '2024/25', abstract: 'Fisica per le Professioni Sanitarie', syllabus: '/files/fisica1.pdf' },
-    { name: 'Fisica Medica', academicYear: '2024/25', abstract: 'Fisica per le Professioni Sanitarie', syllabus: '/files/fisica1.pdf' },
+    { name: 'Brain imaging-methods and applications', academicYear: '2024/25', abstract: 'LMSCC, analista di big-data nelle neuroscienze cognitive', syllabus: '/files/fisica1.pdf' },
+    { name: 'Fisica', academicYear: '2024/25', abstract: 'Logopedia', syllabus: '/files/fisica1.pdf' },
+    { name: 'Fisica applicata', academicYear: '2024/25', abstract: 'Igiene dentale', syllabus: '/files/fisica1.pdf' },
+    { name: 'Fisica tecnica ambientale', academicYear: '2024/25', abstract: 'Tecniche della prevenzione nellambiente e nei luoghi di lavoro', syllabus: '/files/fisica1.pdf' },
+    { name: 'Posturologia', academicYear: '2024/25', abstract: 'Fisioterapia', syllabus: '/files/fisica1.pdf' },
+    { name: 'Valutazione posturale optoelettronica', academicYear: '2024/25', abstract: 'Fisioterapia', syllabus: '/files/fisica1.pdf' },
   ];
 }
