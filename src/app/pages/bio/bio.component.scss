@@ -1,0 +1,8 @@
+// compatto: 8 px sopra/sotto invece dei 24 px default
+:host ::ng-deep .mat-vertical-content {
+    padding: 8px 16px !important;
+  }
+
+  :host ::ng-deep .mat-vertical-stepper .mat-connector-line {
+    border-left-color: var(--md-sys-color-primary) !important;
+  }

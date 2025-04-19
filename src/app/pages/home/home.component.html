@@ -1,0 +1,109 @@
+<section class="hero is-medium is-info is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">Pierpaolo Croce, PhD</h1>
+      <p class="subtitle is-4">
+        Ricercatore in fisica Applicata  PHYS-06/A  
+        <strong class="break-line">
+          <span>electroencephalography</span>
+          <span>data analysis</span>
+        </strong>.
+      </p>
+      <!-- <a class="button is-info is-medium" routerLink="/pubblicazioni">
+        Scopri le mie ricerche
+      </a> -->
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline is-variable is-6 has-text-centered">
+      
+      <!-- Pubblicazioni -->
+      <div class="column is-3">
+        <p class="title is-2">{{ publicationsCount }}</p>
+        <p class="heading">Pubblicazioni</p>
+      </div>
+
+      <!-- Citazioni -->
+      <div class="column is-3">
+        <p class="title is-2">{{ citationsCount }}k</p>
+        <p class="heading">Citazioni</p>
+      </div>
+
+      <!-- Collaborazioni -->
+      <div class="column is-3">
+        <p class="title is-2">{{ collaborationsCount }}</p>
+        <p class="heading">Collaborazioni</p>
+      </div>
+
+      <!-- Corsi tenuti -->
+      <div class="column is-3">
+        <p class="title is-2">{{ coursesCount }}</p>
+        <p class="heading">Corsi tenuti</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section " >
+  <div class="container ">
+    <div class="columns is-multiline is-variable is-8">
+
+      <div class="column is-one-third" *ngFor="let h of highlights">
+        <div class="card is-hoverable">
+          <div class="card-content has-text-centered">
+            <span class="icon is-large has-text-primary">{{ h.icon }}</span>
+            <p class="title is-5 mt-2">{{ h.title }}</p>
+            <p class="subtitle is-6">{{ h.subtitle }}</p>
+            <div class="content mt-3">{{ h.description }}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- CTA finale -->
+<!-- <section class="section has-background-primary-light"> -->
+  <section class="section has-background-info has-text-white">
+  <div class="container has-text-centered">
+    <h2 class="title is-3">Vuoi il mio CV completo?</h2>
+
+    <div class="buttons is-centered mt-4">
+      
+      <!-- Bottone principale -->
+      <a
+        class="button is-light"
+        href="/assets/CV_PierpaoloVerdi.pdf"
+        download>
+        Scarica PDF
+      </a>
+
+      <!-- Link social/text-only -->
+      <a
+      
+        class="button is-light"
+        href="https://orcid.org/0000-0001-7279-3052"
+        target="_blank">
+        ORCID
+      </a>
+      <a
+        class="button is-light"
+        href="https://scholar.google.it/citations?user=sf_n04wAAAAJ&hl=it"
+        target="_blank">
+        Scholar
+      </a>
+      <a
+        class="button is-light"
+        href="https://www.scopus.com/authid/detail.uri?authorId=57579359800"
+        target="_blank">
+        Scopus
+      </a>
+    </div>
+  </div>
+</section>
+
+  

@@ -1,0 +1,38 @@
+<section class="section">
+  <div class="container">
+
+    <!-- wrapper Bulma centrato 8/12 -->
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+
+        <!-- griglia di card corsi -->
+        <div class="coluns is-multiline is-variable is-6">
+          <div
+            class="column is-full-mobile is-half-tablet is-half-desktop"
+            *ngFor="let c of courses">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  {{ c.name }}<br /><small>{{ c.academicYear }}</small>
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">{{ c.abstract }}</div>
+              </div>
+              <footer class="card-footer">
+                <a
+                  class="card-footer-item"
+                  [href]="c.syllabus"
+                  target="_blank">
+                  Syllabus
+                </a>
+              </footer>
+            </div>
+          </div><!-- /col -->
+        </div><!-- /inner columns -->
+
+      </div><!-- /wrapper col -->
+    </div><!-- /columns -->
+
+  </div><!-- /container -->
+</section>

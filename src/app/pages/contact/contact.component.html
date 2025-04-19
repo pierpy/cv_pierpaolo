@@ -1,0 +1,7 @@
+<button class="button is-primary" (click)="open()">Apri contatti</button>
+
+<!-- Angular ora sa cos’è <app-contact-sheet> -->
+<app-contact-sheet
+  [class.is-active]="isOpen"
+  (closeEvent)="close()">
+</app-contact-sheet>

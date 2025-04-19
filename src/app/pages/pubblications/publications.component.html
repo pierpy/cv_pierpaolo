@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        
+        <!-- wrapper scrollabile con stile inline per test -->
+        <div style="max-height: 700px; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1rem;">
+          <div class="columns is-multiline is-variable is-6">
+            <div class="column is-full-mobile is-half-tablet" *ngFor="let p of visiblePubs()">
+              <div class="card mb-5">
+                <div class="card-content">
+                  <p class="title is-5">{{ p.title }}</p>
+                  <!-- <p class="subtitle is-6">
+                    <em>{{ p.authors }}</em> — {{ p.journal }} ({{ p.year }})
+                  </p> -->
+                  <div class="buttons mt-3">
+                    <a *ngIf="p.doi" class="button is-small is-link"
+                       [href]="'https://doi.org/'+p.doi" target="_blank">
+                      DOI
+                    </a>
+                    <a *ngIf="p.url" class="button is-small is-light"
+                       [href]="p.url" target="_blank">
+                      PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /wrapper -->
+        
+      </div>
+    </div>
+  </div>
+</section>
